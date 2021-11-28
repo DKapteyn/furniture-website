@@ -1,0 +1,83 @@
+@mixin large-screen {@media screen and (min-width: 575px){@content;}}
+@mixin small-screen{@media screen and (max-width: 576px){@content;}}
+  
+  
+.main--container{
+    display: flex;
+    
+    height:534px;
+    width:100%;
+   
+    
+    
+    }
+    .main--leftcontainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        width: 100%;
+    }
+
+    .main--lefttext{
+        width:400px;
+        height:261px;
+       margin:auto;
+       align-self: center;
+
+    }
+
+    .main--title{
+        font-weight: 600;
+        font-size: 40px;
+    }
+.main--para{
+    font-family: 500;
+    font-size: 12px;
+    color: #A0A0A0;
+
+}
+
+.main--shopnow{
+    font-family: 500;
+    font-size: 12px;
+    letter-spacing: 1em;
+    padding-top: 32px;
+}
+.arrow{
+    margin-left:3em;
+}
+
+    .button-container{
+      display: flex;
+        height: 80px;
+        width:160px;
+      
+    }
+
+.button{
+  padding:30px;
+    width:80px;
+    background-color: black;
+   
+  
+}
+
+.button:hover{
+   background-color: #444444;
+
+}
+
+
+
+
+    .buttonimages{
+      
+        color:white;
+        height:24px;
+        width:12px;
+      
+      
+       
+
+    }
+    

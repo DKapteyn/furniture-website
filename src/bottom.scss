@@ -1,0 +1,15 @@
+@mixin large-screen {@media screen and (min-width: 575px){@content;}}
+@mixin small-screen{@media screen and (max-width: 576px){@content;}}
+  
+
+.bottom--container{
+height:266px;
+width: 100%;
+display: flex;
+}
+
+.bottom--container > img{
+ width:440px;
+ height:100%
+
+}
