@@ -4,31 +4,35 @@
   
 .main--container{
     display: flex;
-    
-    height:534px;
+    height:100%;
+   /* height:534px;*/
     width:100%;
    
     
     
     }
-    .main--leftcontainer{
+    .main--rightcontainer{
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
         width: 100%;
+       
+       
     }
 
-    .main--lefttext{
+    .main--righttext{
         width:400px;
-        height:261px;
+       height:261px;
        margin:auto;
        align-self: center;
+       margin-bottom: 73px;
 
     }
 
     .main--title{
         font-weight: 600;
         font-size: 40px;
+        letter-spacing: -2px;
     }
 .main--para{
     font-family: 500;
@@ -49,8 +53,9 @@
 
     .button-container{
       display: flex;
-        height: 80px;
+            height: 80px;
         width:160px;
+       
       
     }
 

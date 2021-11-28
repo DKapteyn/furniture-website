@@ -12,18 +12,104 @@ $White: hsl(0, 0%, 100%);
 *{
   box-sizing: border-box;
 }
-html,body{
-  height: 100%;
-  width:100%;
+body{
+ 
   padding: 0px;
   margin: 0px;
   font-family: 'Spartan', sans-serif;
 }
 
+.app--container{
+  display: grid;
+  grid-template-rows: 2fr 1fr;
+  height: 100%;
+  @include large-screen{
+    grid-template-rows: 2fr 1fr;
+
+  }
+}
+
+.nav{
+  position: absolute;
+  display: flex;
+  color:white;
+ @include large-screen{
+  top: 64px;
+left:64px;
+}
+@include small-screen{
+width:100%
+
+}
 
 
+}
+
+
+
+.nav--hamburger{
+@include large-screen{
+  display:none;
+}
+  @include small-screen{
+    height: 14px;
+    width:20px;
+   margin-top: 48px;
+   
+   margin-left:24px;
+   
+    
+
+  }
+ 
+}
+
+
+.nav--Title{
+  text-align: center;
+  font-size: 25px;
+  font-weight: 700;
+  cursor: pointer;
+
+  @include large-screen{
+  padding-top:5px;
   
+}
+@include small-screen{
   
+  padding-left:113px;
+  margin-top: 40px;
+  
+ 
+}
+
+}
+
+.nav--ul{
+  list-style-type: none;
+  display:flex;
+  @include small-screen{
+    display:none
+  }
+
+}
+
+.nav--List{
+  padding-right: 2em;
+font-size:12px;
+cursor:pointer;
+}
+
+
+.nav--image-title{
+display:flex;
+width: 100%;
+justify-items: center;
+
+
+
+}
+ 
 
 
 
