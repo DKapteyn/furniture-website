@@ -1,5 +1,7 @@
 
 export default function Bottom(){
+
+
 return(
 <footer className="bottom--container">
 <img src="\images\image-about-dark.jpg" alt="blackchairs"/>

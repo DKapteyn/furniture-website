@@ -28,7 +28,8 @@ function App() {
     <div className="app--container">
       <Nav />
       <Main
-        img={DataSheet[dataNum].img}
+        Limg={DataSheet[dataNum].Limg}
+        Simg={DataSheet[dataNum].Simg}
         title={DataSheet[dataNum].title}
         para={DataSheet[dataNum].para}
         handleClickDown={numDown}

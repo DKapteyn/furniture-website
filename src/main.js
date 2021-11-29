@@ -1,8 +1,8 @@
 export default function Main(props) {
   return (
     <div className="main--container">
-      <img className="main--heropic" src={props.img} alt="hero pic" />
-
+      <img className="main--large-heropic" src={props.Limg} alt="hero pic" />
+      <img className="main--small-heropic" src={props.Simg} alt="hero pic" />
       <div className="main--rightcontainer">
         <div className="main--righttext">
           <h1 className="main--title"> {props.title}</h1>

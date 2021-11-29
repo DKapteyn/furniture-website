@@ -3,8 +3,8 @@ $Black: hsl(0, 0%, 0%);
 $White: hsl(0, 0%, 100%);
  $Very-Dark-Gray: hsl(0, 0%, 27%);
 
-@mixin large-screen {@media screen and (min-width: 575px){@content;}}
-@mixin small-screen{@media screen and (max-width: 576px){@content;}}
+@mixin large-screen {@media screen and (min-width: 375px){@content;}}
+@mixin small-screen{@media screen and (max-width: 376px){@content;}}
   
 @import "main";
 @import "bottom";
@@ -98,7 +98,7 @@ width:100%
   @include small-screen{
    display:none;
     position:absolute;
-    display: flex;
+    /*display: flex;*/
     justify-content: space-between;
     height:70px;
     background-color:white;

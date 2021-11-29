@@ -1,5 +1,5 @@
-@mixin large-screen {@media screen and (min-width: 575px){@content;}}
-@mixin small-screen{@media screen and (max-width: 576px){@content;}}
+@mixin large-screen {@media screen and (min-width: 375px){@content;}}
+@mixin small-screen{@media screen and (max-width: 376px){@content;}}
   
   
 .main--container{
@@ -20,17 +20,26 @@
     
     }
 
-.main--heropic{
+.main--large-heropic{
 display:flex;
 justify-content: flex-start;
 @include small-screen{
-    min-width:375px;
-    height: 360px;
-    
-    
+  display:none;
 }
 }
 
+.main--small-heropic{
+@include large-screen{
+    display:none;
+}
+@include small-screen{
+    display:flex;
+justify-content: flex-start;
+    min-width:375px;
+    height: 360px;
+}
+   
+}
 
     .main--rightcontainer{
         display: flex;
