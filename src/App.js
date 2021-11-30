@@ -23,7 +23,7 @@ function App() {
   
   window.addEventListener('resize', classChange)
     
-    
+  
   function numUp() {
     if (dataNum === DataSheet.length - 1) {
       setdataNum(0);

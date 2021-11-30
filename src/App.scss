@@ -38,6 +38,7 @@ min-width: 375px;
   position: absolute;
   display: flex;
   color:white;
+  z-index: 3;
  @include large-screen{
   top: 64px;
 left:64px;
