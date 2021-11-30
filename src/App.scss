@@ -3,8 +3,8 @@ $Black: hsl(0, 0%, 0%);
 $White: hsl(0, 0%, 100%);
  $Very-Dark-Gray: hsl(0, 0%, 27%);
 
-@mixin large-screen {@media screen and (min-width: 375px){@content;}}
-@mixin small-screen{@media screen and (max-width: 376px){@content;}}
+@mixin large-screen {@media screen and (min-width: 376px){@content;}}
+@mixin small-screen{@media screen and (max-width: 375px){@content;}}
   
 @import "main";
 @import "bottom";
@@ -53,19 +53,17 @@ width:100%
 
 
 .nav--hamburger{
-@include large-screen{
-  display:none;
-}
+  @include large-screen{
+    display:none;
+  }
   @include small-screen{
     height: 14px;
     width:20px;
    margin-top: 48px;
-   
+   cursor: pointer;
    margin-left:30px;
    
-    
-
-  }
+    }
  
 }
 
@@ -74,7 +72,8 @@ width:100%
   text-align: center;
   font-size: 25px;
   font-weight: 700;
-  cursor: pointer;
+  
+ 
 
   @include large-screen{
   padding-top:5px;
@@ -82,7 +81,7 @@ width:100%
 }
 @include small-screen{
   
-  padding-left:130px;
+  padding-left:113px;
   margin-top: 40px;
   
  
@@ -97,25 +96,34 @@ width:100%
   
   @include small-screen{
    display:none;
-    position:absolute;
-    /*display: flex;*/
-    justify-content: space-between;
-    height:70px;
-    background-color:white;
-    color:black;
-    width:100%;
-    padding:26px ;
-    margin:0px;
-    min-width: 375px;
+    
   }
+}
+
+.nav--ul-onclick{
+  position:absolute;
+  list-style-type: none;
+  display:flex;
+ 
+  justify-content: space-between;
+  height:70px;
+  background-color:white;
+  color:black;
+  width:100%;
+  padding:26px ;
+  margin:0px;
+  min-width: 375px;
 
 }
 
-.nav--image{
+
+
+
+.nav-x-small{
 @include large-screen{
   display:none;
-}
- @include small-screen{
+}  
+@include small-screen{
 height: 13px;
 width:auto;
 margin-right:60px ;

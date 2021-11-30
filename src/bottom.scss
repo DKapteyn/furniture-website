@@ -1,5 +1,5 @@
-@mixin large-screen {@media screen and (min-width: 375px){@content;}}
-@mixin small-screen{@media screen and (max-width: 376px){@content;}}
+@mixin large-screen {@media screen and (min-width: 376px){@content;}}
+@mixin small-screen{@media screen and (max-width: 375px){@content;}}
   
 $Dark-Gray: hsl(0, 0%, 63%);
 
