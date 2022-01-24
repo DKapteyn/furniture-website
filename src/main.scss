@@ -1,203 +1,167 @@
-@mixin large-screen {@media screen and (min-width: 376px){@content;}}
-@mixin small-screen{@media screen and (max-width: 375px){@content;}}
-  
-  
-.main--container{
-    display:flex;
-    width:100%;
-    z-index:1;
-   
-   
-   
-    @include large-screen{
-        height:534px;
-    }
-  
-  
-   
-    @include small-screen{
-        flex-direction: column;
-        background-color: #808080;
-    }
-   
-    
-    
-    }
-
-.main--large-heropic{
-display:flex;
-justify-content: flex-start;
-@include small-screen{
-  display:none;
+@mixin large-screen {
+  @media screen and (min-width: 376px) {
+    @content;
+  }
 }
+@mixin small-screen {
+  @media screen and (max-width: 375px) {
+    @content;
+  }
 }
 
+.main--container {
+  display: flex;
+  width: 100%;
+  z-index: 1;
 
-.main--small-heropic{
-@include large-screen{
-    display:none;
+  @include large-screen {
+    height: 534px;
+    background-color: #808080;
+  }
+
+  @include small-screen {
+    flex-direction: column;
+    background-color: #808080;
+  }
 }
-@include small-screen{
-    display:flex;
-justify-content: flex-start;
-    min-width:375px;
-    height: 360px;
+
+.main--large-heropic {
+  display: flex;
+  justify-content: flex-start;
+  @include small-screen {
+    display: none;
+  }
 }
-}
-.main--small-heropic-onclick{
-    @include large-screen{
-        display:none;
-    }
-    @include small-screen{
-        display:flex;
+
+.main--small-heropic {
+  @include large-screen {
+    display: none;
+  }
+  @include small-screen {
+    display: flex;
     justify-content: flex-start;
-        min-width:375px;
-        height: 360px;
-        z-index:2;
-        opacity:0.4;
-       
-        
-     
-    }
-   
+    min-width: 375px;
+    height: 360px;
+  }
+}
+.main--small-heropic-onclick {
+  @include large-screen {
+    display: none;
+  }
+  @include small-screen {
+    display: flex;
+    justify-content: flex-start;
+    min-width: 375px;
+    height: 360px;
+    z-index: 2;
+    opacity: 0.4;
+  }
 }
 
-    .main--rightcontainer{
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        width:100%;
-        background-color: white;
-        
-     z-index:2;
-     
-    }
+.main--rightcontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 100%;
+  background-color: white;
 
+  z-index: 2;
+}
 
-    .main--rightcontainer-onclick{
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        width:100%;
-        background-color: #808080;
-       
-     z-index:2;
-     
-    }
-        
-   
+.main--rightcontainer-onclick {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 100%;
+  background-color: #808080;
 
-    .main--righttext{
-        
-       @include large-screen{
-        display: flex;
-        flex-direction: column;
-        width:400px;
-        height:261px;
-        justify-content: center;
-        align-self: center;
-        margin-bottom: 73px;
-        
-        /*padding-left:80px;
+  z-index: 2;
+}
+
+.main--righttext {
+  @include large-screen {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 261px;
+    justify-content: center;
+    align-self: center;
+    margin-bottom: 73px;
+
+    /*padding-left:80px;
         padding-right:80px;*/
+  }
 
-
-}
-       
-       @include small-screen{
-        width: 100%;
-        padding:30px;
-       }
-
-    }
-
-    
-
-    .main--title{
-        @include large-screen{
-            font-size: 40px;
-        }
-
-        @include small-screen{
-            font-size: 28px;
-        }
-        font-weight: 600;
-        
-        letter-spacing: -2px;
-       
-    }
-.main--para{
-    font-family: 500;
-    font-size: 12px;
-    color: #A0A0A0;
-  
-   
-
+  @include small-screen {
+    width: 100%;
+    padding: 30px;
+  }
 }
 
-.main--para-onclick{
-    font-family: 500;
-    font-size: 12px;
-    color:#505050
-  
-   
+.main--title {
+  @include large-screen {
+    font-size: 40px;
+  }
 
+  @include small-screen {
+    font-size: 28px;
+  }
+  font-weight: 600;
+
+  letter-spacing: -2px;
+}
+.main--para {
+  font-family: 500;
+  font-size: 12px;
+  color: #a0a0a0;
 }
 
-.main--shopnow{
-    font-family: 500;
-    font-size: 12px;
-    letter-spacing: 1em;
-    padding-top: 32px;
-  
-  
-}
-.arrow{
-    margin-left:3em;
-   
-}
-    .button-container{
-      display: flex;
-            height: 80px;
-        width:160px;
-        justify-self: flex-start;
-       @include small-screen{
-           align-self: flex-end;
-           position: absolute;
-           top:280px;
-           z-index:2
-           
-        
-       }
-      
-    }
-
-.button{
-    padding:30px;
-    width:80px;
-    background-color: black;
-    z-index:2;
-  
-  
+.main--para-onclick {
+  font-family: 500;
+  font-size: 12px;
+  color: #505050;
 }
 
-
-.button:hover{
-   background-color: #444444;
-
+.main--shopnow {
+  font-family: 500;
+  font-size: 12px;
+  letter-spacing: 1em;
+  padding-top: 32px;
+}
+.arrow {
+  margin-left: 3em;
+}
+.button-container {
+  display: flex;
+  height: 80px;
+  width: 160px;
+  justify-self: flex-start;
+  @include small-screen {
+    align-self: flex-end;
+    position: absolute;
+    top: 280px;
+    z-index: 2;
+  }
 }
 
+.button {
+  padding: 30px;
+  width: 80px;
+  background-color: black;
+  z-index: 2;
+}
 
+.button:hover {
+  background-color: #444444;
+}
 
+.buttonimages {
+  color: white;
+  height: 24px;
+  width: 12px;
+}
 
-    .buttonimages{
-      
-        color:white;
-        height:24px;
-        width:12px;
-      }
-    
-      .angleImage-onclick{
-          filter:invert(68%) sepia(5%) saturate(22%) hue-rotate(151deg) brightness(94%) contrast(87%); ;
-          
-      }
+.angleImage-onclick {
+  filter: invert(68%) sepia(5%) saturate(22%) hue-rotate(151deg) brightness(94%)
+    contrast(87%);
+}
