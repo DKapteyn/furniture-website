@@ -1,3 +1,4 @@
+import "../sass/main.scss";
 import { motion } from "framer-motion";
 
 export default function Main(props) {
@@ -39,7 +40,6 @@ export default function Main(props) {
             key={props.title}
             className="main--title"
           >
-            {" "}
             {props.title}
           </motion.h1>
           <motion.p
@@ -50,26 +50,29 @@ export default function Main(props) {
             key={props.Limg}
             className={`main--para${props.classSize}`}
           >
-            {" "}
             {props.para}
           </motion.p>
           <div className="main--shopnow">
             <span>SHOP NOW</span>
-            <img className="arrow" src="\images\icon-arrow.svg" alt="arrow" />
+            <img
+              className="arrow"
+              src="\furniture-website\images\icon-arrow.svg"
+              alt="arrow"
+            />
           </div>
         </div>
         <div className="button-container">
           <div onClick={props.handleClickDown} className={`leftbutton, button`}>
             <img
               className={`angleImage${props.classSize}`}
-              src="\images\icon-angle-left.svg"
+              src="\furniture-website\images\icon-angle-left.svg"
               alt="left pointer"
             />
           </div>
           <div onClick={props.handleClickUp} className={`rightbutton, button`}>
             <img
               className={`angleImage${props.classSize}`}
-              src="\images\icon-angle-right.svg"
+              src="\furniture-website\images\icon-angle-right.svg"
               alt="right pointer"
             />
           </div>

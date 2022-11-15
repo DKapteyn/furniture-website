@@ -1,0 +1,97 @@
+@import "_mixin";
+
+.nav {
+  position: absolute;
+  display: flex;
+  color: white;
+  z-index: 3;
+  @include large-screen {
+    top: 64px;
+    left: 64px;
+  }
+  @include small-screen {
+    width: 100%;
+  }
+}
+
+.nav--hamburger {
+  @include large-screen {
+    display: none;
+  }
+  @include small-screen {
+    height: 14px;
+    width: 20px;
+    margin-top: 48px;
+    cursor: pointer;
+    margin-left: 30px;
+  }
+}
+
+.nav--Title {
+  text-align: center;
+  font-size: 25px;
+  font-weight: 700;
+
+  @include large-screen {
+    padding-top: 5px;
+  }
+  @include small-screen {
+    padding-left: 113px;
+    margin-top: 40px;
+  }
+}
+
+.nav--ul {
+  list-style-type: none;
+  display: flex;
+
+  @include small-screen {
+    display: none;
+  }
+}
+
+.nav--ul-onclick {
+  position: absolute;
+  list-style-type: none;
+  display: flex;
+
+  justify-content: space-between;
+  height: 70px;
+  background-color: white;
+  color: black;
+  width: 100%;
+  padding: 26px;
+  margin: 0px;
+  min-width: 375px;
+}
+
+.nav-x-small {
+  @include large-screen {
+    display: none;
+  }
+  @include small-screen {
+    height: 13px;
+    width: auto;
+    margin-right: 60px;
+    cursor: pointer;
+  }
+}
+
+.nav--List {
+  @include large-screen {
+    padding-right: 2em;
+  }
+  font-size: 12px;
+  cursor: pointer;
+  @include small-screen {
+    /* padding: 27px 0px 27px 26px;*/
+    font-size: 13px;
+    padding-right: 0px;
+  }
+}
+
+.nav--image-title {
+  display: flex;
+  width: 100%;
+  justify-items: center;
+}
