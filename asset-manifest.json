@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/room-website/static/css/main.05e91490.chunk.css",
-    "main.js": "/room-website/static/js/main.2f3c3657.chunk.js",
-    "main.js.map": "/room-website/static/js/main.2f3c3657.chunk.js.map",
-    "runtime-main.js": "/room-website/static/js/runtime-main.e275ebb7.js",
-    "runtime-main.js.map": "/room-website/static/js/runtime-main.e275ebb7.js.map",
-    "static/js/2.9444b155.chunk.js": "/room-website/static/js/2.9444b155.chunk.js",
-    "static/js/2.9444b155.chunk.js.map": "/room-website/static/js/2.9444b155.chunk.js.map",
+    "main.css": "/room-website/static/css/main.0897f358.chunk.css",
+    "main.js": "/room-website/static/js/main.9945829f.chunk.js",
+    "main.js.map": "/room-website/static/js/main.9945829f.chunk.js.map",
+    "runtime-main.js": "/room-website/static/js/runtime-main.74771a37.js",
+    "runtime-main.js.map": "/room-website/static/js/runtime-main.74771a37.js.map",
+    "static/js/2.fd7f6521.chunk.js": "/room-website/static/js/2.fd7f6521.chunk.js",
+    "static/js/2.fd7f6521.chunk.js.map": "/room-website/static/js/2.fd7f6521.chunk.js.map",
     "index.html": "/room-website/index.html",
-    "static/css/main.05e91490.chunk.css.map": "/room-website/static/css/main.05e91490.chunk.css.map",
-    "static/js/2.9444b155.chunk.js.LICENSE.txt": "/room-website/static/js/2.9444b155.chunk.js.LICENSE.txt"
+    "static/css/main.0897f358.chunk.css.map": "/room-website/static/css/main.0897f358.chunk.css.map",
+    "static/js/2.fd7f6521.chunk.js.LICENSE.txt": "/room-website/static/js/2.fd7f6521.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.e275ebb7.js",
-    "static/js/2.9444b155.chunk.js",
-    "static/css/main.05e91490.chunk.css",
-    "static/js/main.2f3c3657.chunk.js"
+    "static/js/runtime-main.74771a37.js",
+    "static/js/2.fd7f6521.chunk.js",
+    "static/css/main.0897f358.chunk.css",
+    "static/js/main.9945829f.chunk.js"
   ]
 }
