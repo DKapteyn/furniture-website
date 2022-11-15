@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/furniture-website/static/css/main.a9e6ae66.chunk.css",
-    "main.js": "/furniture-website/static/js/main.12496e50.chunk.js",
-    "main.js.map": "/furniture-website/static/js/main.12496e50.chunk.js.map",
+    "main.js": "/furniture-website/static/js/main.b30d20a8.chunk.js",
+    "main.js.map": "/furniture-website/static/js/main.b30d20a8.chunk.js.map",
     "runtime-main.js": "/furniture-website/static/js/runtime-main.74e26c9a.js",
     "runtime-main.js.map": "/furniture-website/static/js/runtime-main.74e26c9a.js.map",
     "static/js/2.fd7f6521.chunk.js": "/furniture-website/static/js/2.fd7f6521.chunk.js",
@@ -15,6 +15,6 @@
     "static/js/runtime-main.74e26c9a.js",
     "static/js/2.fd7f6521.chunk.js",
     "static/css/main.a9e6ae66.chunk.css",
-    "static/js/main.12496e50.chunk.js"
+    "static/js/main.b30d20a8.chunk.js"
   ]
 }
